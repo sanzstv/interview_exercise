@@ -1,0 +1,42 @@
+.sticky {
+	position: fixed;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	margin-top: 0 !important;
+    padding-top: 28px !important;
+	background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+}
+
+.sticky > div:first-child {
+	display: none;
+}
+
+.sticky .sticky-size {
+	display: none !important;
+}
+
+/* Mostly making the expanded selectors fit better on mobile landscape views*/
+@media (orientation: landscape) {
+	body.product.product-v1 .mobile-select-collapsed.sticky .variant-selection-controls{
+		margin-bottom: 15px !important;
+	}
+	
+	body.product.product-v1 .sticky .product__info .product-variants .product-actions {
+		margin-top: 0px !important;
+	}
+	
+	body.product.product-v1 .sticky .swatch-selector__group-container {
+		margin-top: 4px !important;
+	}
+	
+	body.product.product-v1 .sticky .swatch-selector__title {
+		margin-bottom: 10px !important;
+	}
+	
+	body.product.product-v1 .product__info .product-variants .sticky .product-actions--collapsible {
+		margin-top: 0px !important;
+	}
+}
